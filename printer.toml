@@ -1,0 +1,45 @@
+[printer]
+kinematics = "dual_delta"
+max_velocity = 100.0
+custom_kinematics_path = ""
+
+[printer.delta]
+arm_length = 200.0
+rod_length = 300.0
+bed_radius = 100.0
+
+[printer.dual_delta]
+primary.arm_length = 200.0
+primary.rod_length = 300.0
+primary.bed_radius = 100.0
+secondary.arm_length = 200.0
+secondary.rod_length = 300.0
+secondary.bed_radius = 100.0
+
+[printer.corexy]
+belt_angle = 45.0
+
+[printer.hbot]
+belt_angle = 45.0
+
+[printer.inverse_delta]
+arm_length = 200.0
+rod_length = 300.0
+bed_radius = 100.0
+
+[printer.polar]
+max_radius = 100.0
+
+[printer.five_axis_trunnion]
+table_length = 200.0
+
+[printer.five_axis_bed]
+bed_length = 200.0
+
+[printer.spherical_parallel]
+platform_radius = 50.0
+base_radius = 100.0
+
+[communication]
+protocol = "serial"
+device = "/dev/ttyUSB0"
